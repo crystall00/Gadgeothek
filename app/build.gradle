@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.example.tony.gadgeothek"
         minSdkVersion 19
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,4 +30,10 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile files('libs/gson-2.7.jar')
     compile files('libs/okhttp-3.4.1.jar')
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.ning:async-http-client:1.9.31'
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'org.slf4j:slf4j-simple:1.7.12'
+    compile 'com.android.support:support-v13:+'
+    compile files('libs/android-support-v7-recyclerview.jar')
 }
