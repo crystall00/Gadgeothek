@@ -1,0 +1,42 @@
+package com.example.tony.gadgeothek.adapter;
+
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.tony.gadgeothek.R;
+import ch.hsr.mge.gadgeothek.domain.Loan;
+
+import java.util.List;
+
+public class LoanListAdapter extends RecyclerView.Adapter<LoanListViewHolder> {
+
+    private List<Loan> loans;
+
+    public LoanListAdapter(List<Loan> loans) {
+
+        this.loans = loans;
+    }
+
+    @Override
+    public LoanListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        View v = layoutInflater.inflate(R.layout.loanlist_rowlayout, parent, false);
+        TextView textView = (TextView) v.findViewById(R.id.loanlist);
+        LoanListViewHolder viewHolder = new LoanListViewHolder(v, textView);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(LoanListViewHolder holder, int position) {
+        final Loan loan = loans.get(position);
+        holder.textView.setText(loan.getGadget().getName());
+    }
+
+    @Override
+    public int getItemCount() {
+        return loans.size();
+    }
+}

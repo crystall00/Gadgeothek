@@ -1,4 +1,5 @@
 package com.example.tony.gadgeothek;
+
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -9,20 +10,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.Snackbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.example.tony.gadgeothek.fragments.LoginFragment;
 import com.example.tony.gadgeothek.fragments.RegistrationFragment;
 import com.example.tony.gadgeothek.fragments.TabFragment;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
 
 import java.util.Stack;
 
 public class GadgeothekActivity extends AppCompatActivity implements View.OnClickListener{
 
-    public enum Pages {LOGIN, REGISTRATION, TAB, RESERVATION}
+    public enum Pages {LOGIN, REGISTRATION, TAB, RESERVATION, LOAN}
     public Stack<Pages> pages = new Stack<>();
 
     final Context context = this;
@@ -97,6 +99,7 @@ public class GadgeothekActivity extends AppCompatActivity implements View.OnClic
                 pages.push(Pages.REGISTRATION);
                 switchTo(new RegistrationFragment());
                 break;
+
         }
     }
 

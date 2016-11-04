@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.domain.Gadget;
+import com.example.tony.gadgeothek.domain.Gadget;
 
 import java.util.List;
 

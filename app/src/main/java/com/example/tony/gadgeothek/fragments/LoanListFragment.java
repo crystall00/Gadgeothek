@@ -12,11 +12,12 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.tony.gadgeothek.GadgeothekActivity;
 import com.example.tony.gadgeothek.R;
 import com.example.tony.gadgeothek.adapter.LoanListAdapter;
-import ch.hsr.mge.gadgeothek.domain.Loan;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.domain.Loan;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
 
 public class LoanListFragment extends Fragment {
 
@@ -55,9 +56,6 @@ public class LoanListFragment extends Fragment {
             }
         });
 
-
-
-
         return root;
 
     }
@@ -69,6 +67,7 @@ public class LoanListFragment extends Fragment {
             throw new AssertionError("Activity must implement View.OnClickListener!");
         }
     }
+
 
 
 }

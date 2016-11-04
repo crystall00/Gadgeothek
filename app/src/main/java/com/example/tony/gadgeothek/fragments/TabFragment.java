@@ -18,7 +18,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.example.tony.gadgeothek.GadgeothekActivity;
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.services.LibraryService;
 import com.example.tony.gadgeothek.PagerAdapter;
 
 public class TabFragment extends Fragment{
@@ -74,8 +74,8 @@ public class TabFragment extends Fragment{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((GadgeothekActivity) getActivity()).pages.push(GadgeothekActivity.Pages.RESERVATION);
-                ((GadgeothekActivity) getActivity()).switchTo(new ReservationFragment());
+                    ((GadgeothekActivity) getActivity()).pages.push(GadgeothekActivity.Pages.RESERVATION);
+                    ((GadgeothekActivity) getActivity()).switchTo(new ReservationFragment());
             }
         });
 

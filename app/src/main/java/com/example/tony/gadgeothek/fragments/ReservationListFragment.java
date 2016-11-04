@@ -12,11 +12,13 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.tony.gadgeothek.GadgeothekActivity;
 import com.example.tony.gadgeothek.R;
 import com.example.tony.gadgeothek.adapter.ReservationListAdapter;
-import ch.hsr.mge.gadgeothek.domain.Reservation;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.domain.Reservation;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
+
 
 public class ReservationListFragment extends Fragment {
 
@@ -56,8 +58,6 @@ public class ReservationListFragment extends Fragment {
         });
 
 
-
-
         return root;
 
     }
@@ -69,5 +69,7 @@ public class ReservationListFragment extends Fragment {
             throw new AssertionError("Activity must implement View.OnClickListener!");
         }
     }
+
+
 
 }

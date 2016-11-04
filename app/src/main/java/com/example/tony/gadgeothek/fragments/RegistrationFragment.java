@@ -14,8 +14,8 @@ import android.widget.EditText;
 
 import com.example.tony.gadgeothek.GadgeothekActivity;
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
 
 
 public class RegistrationFragment extends Fragment {

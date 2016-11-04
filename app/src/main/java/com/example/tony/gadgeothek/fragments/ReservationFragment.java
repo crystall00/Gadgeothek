@@ -20,9 +20,9 @@ import java.util.List;
 import com.example.tony.gadgeothek.GadgeothekActivity;
 import com.example.tony.gadgeothek.adapter.ReservationAdapter;
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.domain.Gadget;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.domain.Gadget;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
 
 public class ReservationFragment extends Fragment {
 
@@ -85,7 +85,6 @@ public class ReservationFragment extends Fragment {
                         data = gadget;
                     }
                 }
-
 
 
                 LibraryService.reserveGadget(data, new Callback<Boolean>() {

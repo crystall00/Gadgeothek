@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.domain.Loan;
+import com.example.tony.gadgeothek.domain.Loan;
 
 import java.util.List;
 

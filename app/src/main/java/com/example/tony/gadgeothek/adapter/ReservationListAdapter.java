@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.tony.gadgeothek.R;
-import ch.hsr.mge.gadgeothek.domain.Reservation;
-import ch.hsr.mge.gadgeothek.service.Callback;
-import ch.hsr.mge.gadgeothek.service.LibraryService;
+import com.example.tony.gadgeothek.domain.Reservation;
+import com.example.tony.gadgeothek.services.Callback;
+import com.example.tony.gadgeothek.services.LibraryService;
 
 import java.util.List;
 
